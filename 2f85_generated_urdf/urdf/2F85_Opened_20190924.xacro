@@ -1,0 +1,391 @@
+<?xml version="1.0" ?>
+<robot name="2F85_Opened_20190924" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find 2F85_Opened_20190924_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find 2F85_Opened_20190924_description)/urdf/2F85_Opened_20190924.trans" />
+<xacro:include filename="$(find 2F85_Opened_20190924_description)/urdf/2F85_Opened_20190924.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+    <mass value="0.0"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://2F85_Opened_20190924_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://2F85_Opened_20190924_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="driver_2">
+  <inertial>
+    <origin xyz="-0.012114169671184599 -0.004499999999999982 -0.0008830472374295739" rpy="0 0 0"/>
+    <mass value="0.03702478822255609"/>
+    <inertia ixx="1e-06" iyy="6e-06" izz="6e-06" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.029601 -0.0047 -0.068905" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://2F85_Opened_20190924_description/meshes/driver_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.029601 -0.0047 -0.068905" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://2F85_Opened_20190924_description/meshes/driver_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="driver_1">
+  <inertial>
+    <origin xyz="0.012083392082241726 -0.00449999999999991 0.0012338792868245158" rpy="0 0 0"/>
+    <mass value="0.03702478822255609"/>
+    <inertia ixx="1e-06" iyy="6e-06" izz="6e-06" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.031601 -0.0047 -0.068905" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://2F85_Opened_20190924_description/meshes/driver_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.031601 -0.0047 -0.068905" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://2F85_Opened_20190924_description/meshes/driver_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="bar_2">
+  <inertial>
+    <origin xyz="-0.0039244676706800125 -0.00470553122947143 0.0185810914169615" rpy="0 0 0"/>
+    <mass value="0.11390989723853832"/>
+    <inertia ixx="3.7e-05" iyy="3.2e-05" izz="1.4e-05" ixy="0.0" iyz="-0.0" ixz="6e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.061026 -0.0047 -0.064372" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://2F85_Opened_20190924_description/meshes/bar_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.061026 -0.0047 -0.064372" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://2F85_Opened_20190924_description/meshes/bar_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="proximal_phalanx_2">
+  <inertial>
+    <origin xyz="-0.019805729205065174 -0.01749999999999998 0.021744082780681045" rpy="0 0 0"/>
+    <mass value="0.07939275206386531"/>
+    <inertia ixx="2.5e-05" iyy="2.3e-05" izz="2.3e-05" ixy="0.0" iyz="0.0" ixz="1.1e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0117 -0.017425 -0.07542" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://2F85_Opened_20190924_description/meshes/proximal_phalanx_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0117 -0.017425 -0.07542" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://2F85_Opened_20190924_description/meshes/proximal_phalanx_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="proximal_phalanx_1">
+  <inertial>
+    <origin xyz="0.015403829816968414 -0.01749999999999992 0.025055819130103657" rpy="0 0 0"/>
+    <mass value="0.07939275206386531"/>
+    <inertia ixx="2.9e-05" iyy="2.3e-05" izz="1.9e-05" ixy="0.0" iyz="-0.0" ixz="-1e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0137 -0.017425 -0.07542" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://2F85_Opened_20190924_description/meshes/proximal_phalanx_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0137 -0.017425 -0.07542" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://2F85_Opened_20190924_description/meshes/proximal_phalanx_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="base_1">
+  <inertial>
+    <origin xyz="-0.026998410147629187 0.01602343225185177 0.032323374973435834" rpy="0 0 0"/>
+    <mass value="1.7731258502962342"/>
+    <inertia ixx="0.00138" iyy="0.001572" izz="0.001055" ixy="0.0" iyz="-1e-06" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.028 0.016 -0.014" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://2F85_Opened_20190924_description/meshes/base_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.028 0.016 -0.014" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://2F85_Opened_20190924_description/meshes/base_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="bar_1">
+  <inertial>
+    <origin xyz="0.000638021737629127 0.004705531229471529 0.018979846790111082" rpy="0 0 0"/>
+    <mass value="0.11390989723853832"/>
+    <inertia ixx="3.8e-05" iyy="3.2e-05" izz="1.3e-05" ixy="0.0" iyz="0.0" ixz="-2e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.063336 0.0043 -0.069898" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://2F85_Opened_20190924_description/meshes/bar_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.063336 0.0043 -0.069898" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://2F85_Opened_20190924_description/meshes/bar_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="distal_phalanx_1">
+  <inertial>
+    <origin xyz="-0.009433734783804736 -0.01349999999994737 0.004700089854978343" rpy="0 0 0"/>
+    <mass value="0.056674569628792346"/>
+    <inertia ixx="3e-06" iyy="5e-06" izz="5e-06" ixy="-0.0" iyz="0.0" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.061849 -0.0137 -0.117395" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://2F85_Opened_20190924_description/meshes/distal_phalanx_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.061849 -0.0137 -0.117395" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://2F85_Opened_20190924_description/meshes/distal_phalanx_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="fingertip_1">
+  <inertial>
+    <origin xyz="-0.012839228925142818 -0.008100000609798857 0.015230003768566036" rpy="0 0 0"/>
+    <mass value="0.056588820561535504"/>
+    <inertia ixx="9e-06" iyy="8e-06" izz="3e-06" ixy="0.0" iyz="0.0" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.054947 -0.0083 -0.13041" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://2F85_Opened_20190924_description/meshes/fingertip_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.054947 -0.0083 -0.13041" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://2F85_Opened_20190924_description/meshes/fingertip_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="distal_phalanx_1">
+  <inertial>
+    <origin xyz="0.08613326521619527 -0.12363399999994737 0.10397408985497834" rpy="0 0 0"/>
+    <mass value="0.056674569628792346"/>
+    <inertia ixx="3e-06" iyy="5e-06" izz="5e-06" ixy="-0.0" iyz="0.0" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.033718 -0.123834 -0.018121" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://2F85_Opened_20190924_description/meshes/distal_phalanx_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.033718 -0.123834 -0.018121" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://2F85_Opened_20190924_description/meshes/distal_phalanx_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="fingertip_2">
+  <inertial>
+    <origin xyz="0.012840505481599283 0.008100000609708054 0.01522943513266603" rpy="0 0 0"/>
+    <mass value="0.056588820561535504"/>
+    <inertia ixx="9e-06" iyy="8e-06" izz="3e-06" ixy="0.0" iyz="-0.0" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.060908 0.008375 -0.124421" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://2F85_Opened_20190924_description/meshes/fingertip_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.060908 0.008375 -0.124421" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://2F85_Opened_20190924_description/meshes/fingertip_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="distal_phalanx_2">
+  <inertial>
+    <origin xyz="-0.008467725049610839 -0.013500000000052553 -0.001813880102622109" rpy="0 0 0"/>
+    <mass value="0.056674569628792346"/>
+    <inertia ixx="3e-06" iyy="5e-06" izz="5e-06" ixy="-0.0" iyz="-0.0" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.049908 -0.013225 -0.11792" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://2F85_Opened_20190924_description/meshes/distal_phalanx_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.049908 -0.013225 -0.11792" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://2F85_Opened_20190924_description/meshes/distal_phalanx_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="distal_phalanx_2">
+  <inertial>
+    <origin xyz="0.008433274950389154 0.11113099999994745 0.08880611989737788" rpy="0 0 0"/>
+    <mass value="0.056674569628792346"/>
+    <inertia ixx="3e-06" iyy="5e-06" izz="5e-06" ixy="-0.0" iyz="-0.0" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.066809 0.111406 -0.0273" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://2F85_Opened_20190924_description/meshes/distal_phalanx_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.066809 0.111406 -0.0273" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://2F85_Opened_20190924_description/meshes/distal_phalanx_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Revolute 1" type="revolute">
+  <origin xyz="-0.057601 0.0207 0.054905" rpy="0 0 0"/>
+  <parent link="base_1"/>
+  <child link="driver_2"/>
+  <axis xyz="-0.0 -1.0 0.0"/>
+  <limit upper="0.0" lower="-1.22173" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 2" type="revolute">
+  <origin xyz="0.003601 0.0207 0.054905" rpy="0 0 0"/>
+  <parent link="base_1"/>
+  <child link="driver_1"/>
+  <axis xyz="-0.0 -1.0 0.0"/>
+  <limit upper="1.22173" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Rigid 3" type="fixed">
+  <origin xyz="-0.031425 0.0 -0.004533" rpy="0 0 0"/>
+  <parent link="driver_2"/>
+  <child link="bar_2"/>
+</joint>
+
+<joint name="Revolute 4" type="continuous">
+  <origin xyz="-0.0397 0.033425 0.06142" rpy="0 0 0"/>
+  <parent link="base_1"/>
+  <child link="proximal_phalanx_2"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Revolute 11" type="continuous">
+  <origin xyz="-0.0143 0.033425 0.06142" rpy="0 0 0"/>
+  <parent link="base_1"/>
+  <child link="proximal_phalanx_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Rigid 16" type="fixed">
+  <origin xyz="0.028 -0.016 0.014" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="base_1"/>
+</joint>
+
+<joint name="Rigid 17" type="fixed">
+  <origin xyz="0.031735 -0.009 0.000993" rpy="0 0 0"/>
+  <parent link="driver_1"/>
+  <child link="bar_1"/>
+</joint>
+
+<joint name="Revolute 18" type="continuous">
+  <origin xyz="-0.097054 0.128134 -0.051777" rpy="0 0 0"/>
+  <parent link="bar_1"/>
+  <child link="distal_phalanx_1"/>
+  <axis xyz="-0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Rigid 19" type="fixed">
+  <origin xyz="0.088665 -0.115534 0.112289" rpy="0 0 0"/>
+  <parent link="distal_phalanx_1"/>
+  <child link="fingertip_1"/>
+</joint>
+
+<joint name="Revolute 21" type="revolute">
+  <origin xyz="-0.047418 0.106409 -0.057299" rpy="0 0 0"/>
+  <parent link="proximal_phalanx_1"/>
+  <child link="distal_phalanx_1"/>
+  <axis xyz="-0.0 1.0 0.0"/>
+  <limit upper="1.047198" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Rigid 23" type="fixed">
+  <origin xyz="0.005901 0.103031 0.097121" rpy="0 0 0"/>
+  <parent link="distal_phalanx_2"/>
+  <child link="fingertip_2"/>
+</joint>
+
+<joint name="Revolute 25" type="revolute">
+  <origin xyz="-0.055109 -0.128831 -0.04812" rpy="0 0 0"/>
+  <parent link="proximal_phalanx_2"/>
+  <child link="distal_phalanx_2"/>
+  <axis xyz="0.0 1.0 -0.0"/>
+  <limit upper="0.0" lower="-1.047198" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 27" type="continuous">
+  <origin xyz="-0.005783 -0.116106 -0.037072" rpy="0 0 0"/>
+  <parent link="bar_2"/>
+  <child link="distal_phalanx_2"/>
+  <axis xyz="0.0 1.0 -0.0"/>
+</joint>
+
+</robot>
